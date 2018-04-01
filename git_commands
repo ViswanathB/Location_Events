@@ -1,0 +1,49 @@
+# First set of steps --> create a branch after pulling from master
+git checkout master
+git pull
+git checkout -b BRANCH_NAME
+
+# commit your changes to your branch locally
+git add file1 file2 ....
+git commit
+
+# push your branch to remote repository
+git push -u origin BRANCH_NAME
+
+
+# update your branch with latest changes from master
+git checkout BRANCH_NAME
+git fetch
+git merge origin/master
+
+
+# conflicts??, fix conflicts in each of the conflict files
+git add conflict_file1 conflict_file2 ...
+git commit
+git push origin BRANCH_NAME
+
+
+# push changes from your branch to master
+git checkout master
+git pull --rebase
+git merge --squash BRANCH_NAME
+git commit
+git push origin master
+
+
+# conflict??
+git add conflict_file1 conflitct_file2 ..
+git rebase --continue
+git push origin master
+
+
+# Delete branch locally
+git branch -d BRANCH_NAME
+
+# Delete branch from remote repo
+git push origin :BRANCH_NAME
+
+
+
+
+
