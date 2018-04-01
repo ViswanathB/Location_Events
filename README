@@ -1,0 +1,10 @@
+Backend:
+location_events.py is the backend, which provides an API for the
+front end to return all the events. 
+
+There can be events from multiple websites:
+Meetups, Facebook, eventbrite... for start with. 
+
+
+FRONTEND:
+These needs to be displayed in chronological order in the webpage.
